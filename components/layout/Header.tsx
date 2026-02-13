@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -24,11 +25,14 @@ export default function Header() {
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-2">
-                <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                    <span className="material-icons">visibility</span>
-                </div>
-                <span className="font-display font-bold text-2xl text-primary tracking-wide">CLIOF</span>
+            <Link href="/" className="flex items-center">
+                <Image
+                  src="/images/logo/logo-header.svg"
+                  alt="CLIOF - Clínica Oftalmológica"
+                  width={180}
+                  height={65}
+                  priority
+                />
             </Link>
           </div>
 

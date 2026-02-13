@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,12 +9,12 @@ export default function Footer() {
           
           {/* Brand & Description */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="h-8 w-8 bg-white rounded-full flex items-center justify-center text-primary font-bold text-lg">
-                <span className="material-icons text-sm">visibility</span>
-              </div>
-              <span className="font-display font-bold text-xl tracking-wide">CLIOF</span>
-            </div>
+            <Image
+              src="/images/logo/logo-footer.svg"
+              alt="CLIOF - Clínica Oftalmológica"
+              width={160}
+              height={55}
+            />
             <p className="text-blue-100 text-sm leading-relaxed">
               Comprometidos con tu salud visual. Tecnología de punta y especialistas certificados para brindarte la mejor atención en Sincelejo.
             </p>

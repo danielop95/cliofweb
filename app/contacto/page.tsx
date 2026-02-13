@@ -104,16 +104,19 @@ export default function Contacto() {
                               name="Estefanía Pérez"
                               role="Gestión Administrativa"
                               email="estefania@cliofsincelejo.com"
+                              image="/images/contacto/equipo-estefania.webp"
                           />
                           <AdminPerson 
                               name="Shirley Martínez"
                               role="Coordinación Médica"
                               email="shirley@cliofsincelejo.com"
+                              image="/images/contacto/equipo-shirley.webp"
                           />
                           <AdminPerson 
                               name="Martha Herrera"
                               role="Atención al Usuario"
                               email="martha@cliofsincelejo.com"
+                              image="/images/contacto/equipo-martha.webp"
                           />
                       </div>
                   </div>
@@ -187,11 +190,16 @@ function ChannelCard({ icon, title, desc, email }: { icon: any, title: string, d
     );
 }
 
-function AdminPerson({ name, role, email }: { name: string, role: string, email: string }) {
+function AdminPerson({ name, role, email, image }: { name: string, role: string, email: string, image: string }) {
     return (
         <div className="bg-[#f8f9fa] rounded-[2rem] p-10 text-center hover:shadow-xl transition-all duration-300 group">
-            <div className="w-24 h-24 rounded-full bg-[#e2e8f0] mx-auto mb-6 flex items-center justify-center text-slate-400 group-hover:scale-105 transition-transform duration-300">
-                <UserIcon size={48} />
+            <div className="w-24 h-24 rounded-full mx-auto mb-6 relative overflow-hidden group-hover:scale-105 transition-transform duration-300 shadow-lg border-2 border-white">
+                <Image 
+                    src={image}
+                    alt={name}
+                    fill
+                    className="object-cover"
+                />
             </div>
             <h3 className="text-xl font-bold text-[#024a60] mb-2">{name}</h3>
             <p className="text-xs font-bold text-[#4fb292] uppercase tracking-wider mb-6">{role}</p>

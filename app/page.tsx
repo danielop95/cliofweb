@@ -57,15 +57,15 @@ export default function Home() {
             </div>
 
             {/* Image Content */}
-            <div className="order-1 lg:order-2 relative h-[400px] lg:h-[600px] w-full pt-20 lg:pt-0">
+            <div className="order-1 lg:order-2 relative h-[400px] lg:h-[600px] w-full max-w-xl mx-auto pt-20 lg:pt-0">
                <div className="absolute -top-10 -right-10 w-64 h-64 bg-secondary/20 rounded-full blur-3xl z-0"></div>
                <div className="absolute bottom-10 -left-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl z-0"></div>
                
                <div className="relative h-full w-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white z-10">
                    {/* Placeholder Image - In a real scenario, use local or optimized assets */}
                    <Image 
-                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7F4AinH3PHWgj8CaP1Xvfvx0d2S5yKalTCAwFutN04DKApFbleDapkZFlVuUbUkZDfG8uLwmLWOphlornw5dOYNCmw7UOmEo7IbDDETFrx54VOto0SwY4_O2ngOLYgYIJV3Lv2WKk8alTEhHgzALW6soQd_r_qiCipIr9uh0Yir_ZwNue_b_xZR4KXUs7OPdDdijq-V0d0BL9PkDsmKdrxFtt9F2U_nVv5tfAmOEpUJ6ppY-2R917wlwj_4ibbggA80Xs0ghtY_g"
-                     alt="Doctor explaining eye exam results"
+                     src="/images/home/home-hero-principal.webp"
+                     alt="Clínica Oftalmológica de Sincelejo - Equipos de última generación"
                      fill
                      className="object-cover object-center"
                    />
